@@ -1,8 +1,8 @@
-# ConfProx
+# Confdproxy Docker
 
 ## Introduction
 
-Uses confd to proxy nginx web requests to the correct docker
+A dockered confd which proxies nginx web requests to the correct docker
 containers.
 
 # License
