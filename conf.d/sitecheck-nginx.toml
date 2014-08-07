@@ -1,0 +1,12 @@
+[template]
+prefix = "/sitecheck"
+src = "nginx.tmpl"
+dest = "/etc/nginx/sites-enabled/myapp.conf"
+owner = "root"
+mode = "0644"
+keys = [
+  "/subdomain",
+  "/upstream",
+]
+check_cmd = "/usr/sbin/nginx -t -c {{.src}}"
+reload_cmd = "/usr/sbin/service nginx reload"
